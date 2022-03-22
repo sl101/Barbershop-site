@@ -1,0 +1,235 @@
+.booking {
+  position: relative;
+  max-width: 100%;
+  min-height: 925px;
+  background-image: url("../img/bg/review.jpg");
+  background-position: 0 0;
+  background-size: cover;
+  padding: 63px 0 55px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 991.98px) {
+    .booking {
+      background-image: url("../img/bg/review_tablet.jpg"); } }
+  @media only screen and (max-width: 767.98px) {
+    .booking {
+      min-height: 840px;
+      background-image: none;
+      padding: 28px 5px 4px; } }
+  @media only screen and (max-width: 479.98px) {
+    .booking {
+      padding: 25px 5px 4px; } }
+  .booking::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); }
+    @media only screen and (max-width: 767.98px) {
+      .booking::before {
+        display: none; } }
+  .booking__content {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+    margin: 0 auto;
+    transform: translateX(-9px);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 53px 0 66px; }
+    @media only screen and (max-width: 991.98px) {
+      .booking__content {
+        transform: translateX(0);
+        max-width: 688px; } }
+    @media only screen and (max-width: 479.98px) {
+      .booking__content {
+        padding: 10px 0 60px; } }
+  .booking__subtitle {
+    max-width: 375px;
+    display: block;
+    font-weight: 700;
+    font-size: 32px;
+    color: #222;
+    text-align: center;
+    margin: 0 auto 15px; }
+    @media only screen and (max-width: 479.98px) {
+      .booking__subtitle {
+        font-size: 16px;
+        text-transform: uppercase; } }
+  .booking__description {
+    display: block;
+    text-align: center;
+    margin: 0 auto 55px; }
+    @media only screen and (max-width: 479.98px) {
+      .booking__description {
+        margin: 0 auto 21px; } }
+  .booking__form {
+    max-width: 600px;
+    margin: 0 auto; }
+  .booking__block-input {
+    display: grid;
+    grid-template-areas: "name name" "date time";
+    grid-column-gap: 24px; }
+    @media only screen and (max-width: 767.98px) {
+      .booking__block-input {
+        grid-column-gap: 10px; } }
+    @media only screen and (max-width: 479.98px) {
+      .booking__block-input {
+        grid-template-areas: "name" "date" "time"; } }
+  .booking__label {
+    padding: 0; }
+    .booking__label--name {
+      grid-column: name; }
+    .booking__label--date, .booking__label--time {
+      max-width: 288px; }
+      @media only screen and (max-width: 767.98px) {
+        .booking__label--date, .booking__label--time {
+          max-width: 100%; } }
+    .booking__label--date {
+      grid-column: date; }
+      @media only screen and (max-width: 479.98px) {
+        .booking__label--date {
+          margin: 0 0 16px 0; } }
+    .booking__label--time {
+      grid-column: time; }
+  .booking__label-name {
+    display: block;
+    padding: 0 0 0 20px; }
+    @media only screen and (max-width: 479.98px) {
+      .booking__label-name {
+        padding: 0 0 0 12px; } }
+  .booking__input {
+    justify-content: start;
+    min-height: 44px;
+    margin: 0 0 24px 0;
+    color: #dfdfdf; }
+    .booking__input:focus-visible {
+      color: #ff7a00; }
+    @media only screen and (max-width: 479.98px) {
+      .booking__input {
+        margin: 0 0 15px 0; } }
+  .booking__input[type="time"] {
+    max-width: 288px;
+    width: 100%; }
+  .booking__input[type="date"] {
+    max-width: 288px;
+    width: 100%;
+    margin: 0; }
+  .booking__button {
+    max-width: 165px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 479.98px) {
+      .booking__button {
+        max-width: 100%;
+        width: 100%; } }
+  .booking__filter {
+    margin: 0 0 20px 0; }
+    @media only screen and (max-width: 479.98px) {
+      .booking__filter {
+        margin: 0 0 12px 0; } }
+
+.filter--checkbox {
+  margin: 0 0 31px 0; }
+  @media only screen and (max-width: 479.98px) {
+    .filter--checkbox {
+      margin: 0 0 28px 0; } }
+
+.filter__title {
+  padding: 0 0 0 20px; }
+  @media only screen and (max-width: 479.98px) {
+    .filter__title {
+      padding: 0 0 0 10px; } }
+
+.filter__list {
+  min-height: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  padding: 16px 24px;
+  grid-column-gap: 70px; }
+  @media only screen and (max-width: 767.98px) {
+    .filter__list {
+      grid-column-gap: 20px; } }
+  @media only screen and (max-width: 479.98px) {
+    .filter__list {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto, 1fr);
+      padding: 19px 14px;
+      line-height: 1.4; } }
+  .filter__list--checkbox {
+    min-height: 102px;
+    grid-template-rows: repeat(3, 1fr); }
+
+@media only screen and (max-width: 479.98px) {
+  .filter__item:nth-child(5), .filter__item:nth-child(6) {
+    display: none; } }
+
+.filter__name {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease; }
+  @media only screen and (min-width: 767.98px) {
+    .filter__name:hover::before {
+      border-color: #da6401; } }
+  .filter__name--radio, .filter__name--checkbox {
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .filter__name--radio::before, .filter__name--checkbox::before {
+      content: "";
+      display: inline-block;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      margin: 0 10px 0 0;
+      border: 2px solid #222;
+      background-color: #fff;
+      transition: all 0.4s ease; }
+    .filter__name--radio::after, .filter__name--checkbox::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      transition: all 0.4s ease; }
+  .filter__name--radio::before {
+    border-radius: 100%; }
+  .filter__name--radio::after {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 100%;
+    transform: translateX(4px); }
+  .filter__name--checkbox::before {
+    border-radius: 2px; }
+  .filter__name--checkbox::after {
+    top: 2px;
+    left: 6px;
+    width: 7px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg); }
+
+.filter__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0; }
+  @media only screen and (min-width: 767.98px) {
+    .filter__input:focus + .filter__name::before {
+      border-color: #ff7a00 !important; }
+    .filter__input:focus.filter__input[type="checkbox"]:checked + .filter__name::before {
+      border-color: #da6401 !important; } }
+  .filter__input[type="checkbox"]:checked + .filter__name--checkbox::before {
+    border-color: #ff7a00;
+    background-color: #ff7a00; }
+  .filter__input[type="radio"]:checked + .filter__name--radio::after {
+    background-color: #ff7a00; }
+
+/*# sourceMappingURL=booking.css.map */

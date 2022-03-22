@@ -1,0 +1,13 @@
+.decor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  border-style: none;
+  background-color: transparent; }
+
+/*# sourceMappingURL=decor.css.map */

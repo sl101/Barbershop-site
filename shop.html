@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shop</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon/blade.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<main class="_page">
+			<header class="header _fixed">
+	<div class="_container">
+		<div class="header__content">
+
+			<a class="header__logo logo _hoverSVG _dynamic_adapt_" data-da=".menu__body,992,2" href="../index.html">
+				<svg class="logo__image">
+					<use xlink:href="img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+
+			<div class="header__menu menu">
+				<button class="menu__burger burger" type="button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<nav class="menu__body _dynamic_adapt_" data-da=".wrapper,992,0">
+
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link _hover decor" href="../index.html">Home</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".shop" href="#">Shop</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".gallery" href="#">Gallery</a>
+						</li>
+					</ul>
+
+					<a class="menu__backet _hoverSVG _dynamic_adapt_" data-da=".menu,992,2" href="#">
+						<svg class="menu__icon">
+							<use xlink:href="img/sprite.svg#backet"></use>
+						</svg>
+						<span class="menu__amount">0</span>
+					</a>
+
+					<ul class="menu__request">
+						<li class="menu__popup menu__popup--contact">
+							<a class="menu__btn link link--contact popup-link" href="#popup__contact-us">contact us</a>
+						</li>
+
+						<li class="menu__popup menu__popup--order">
+							<button class="menu__btn link link--order _goto" data-goto=".booking" type="button">book
+								now</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+			<section class="shop" id="shop">
+	<h1 class="sr-only">
+		Brandy sale
+	</h1>
+	<div class="shop__container _container">
+		<div class="shop__content">
+			<button class="shop-swiper__arrow shop-swiper__arrow--prev _hover" type="button"></button>
+			<button class="shop-swiper__arrow shop-swiper__arrow--next _hover" type="button"></button>
+			<div class="shop-swiper">
+				<div class="shop-swiper__wrapper">
+					<div class="shop-swiper__slide shop-slide">
+						<span class="shop-slide__value shop-slide__value--modul">-</span>
+						<span class="shop-slide__value shop-slide__value--amount">50</span>
+						<span class="shop-slide__value shop-slide__value--quality">%</span>
+						<span class="shop-slide__value shop-slide__value--description">brandy sale</span>
+					</div>
+					<div class="shop-swiper__slide shop-slide">
+						<span class="shop-slide__value shop-slide__value--modul">-</span>
+						<span class="shop-slide__value shop-slide__value--amount">25</span>
+						<span class="shop-slide__value shop-slide__value--quality">%</span>
+						<span class="shop-slide__value shop-slide__value--description">brandy sale</span>
+					</div>
+					<div class="shop-swiper__slide shop-slide">
+						<span class="shop-slide__value shop-slide__value--modul">-</span>
+						<span class="shop-slide__value shop-slide__value--amount">70</span>
+						<span class="shop-slide__value shop-slide__value--quality">%</span>
+						<span class="shop-slide__value shop-slide__value--description">brandy sale</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<div class="search">
+	<div class="_container">
+		<form class="search__form form-search" action="#">
+			<label class="form-search__label label">
+				<input class="form-search__input input" type="text" placeholder="Search something you need...">
+				<svg class="form-search__icon">
+					<use xlink:href="img/sprite.svg#search"></use>
+				</svg>
+			</label>
+			<button class="form-search__button link link--order" type="submit">search</button>
+		</form>
+	</div>
+</div>
+			<section class="products-filter" id="product-filter">
+	<h2 class="sr-only">
+		Products filter
+	</h2>
+	<div class="_container">
+		<div class="products-filter__content">
+
+			<aside class="products-filter__aside filter-product">
+				<div class="products-filter__header">
+					<div class="filter-product__title">
+						Filters
+						<button class="filter-product__decor decor-filter _hoverBg" type="button">
+							<span class="decor-filter__middle"></span>
+						</button>
+					</div>
+					<button class="products-filter__filter filter-btn _hoverBtn" type="button">
+						<span class="filter-btn__square"></span>
+						<span class="filter-btn__square"></span>
+						<span class="filter-btn__square filter-btn__square--fat"></span>
+						<span class="filter-btn__square"></span>
+					</button>
+				</div>
+				<nav class="products-filter__menu menu-filter">
+					<ul class="menu-filter__list">
+						<li class="menu-filter__item">
+							<a class="menu-filter__link" href="#">List</a>
+						</li>
+						<li class="menu-filter__item">
+							<a class="menu-filter__link _checked" href="#">Tile</a>
+						</li>
+						<li class="menu-filter__item">
+							<a class="menu-filter__link" href="#">Image</a>
+						</li>
+					</ul>
+				</nav>
+				<form class="products-filter__form" action="#">
+					<button class="products-filter__burger burger" type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="filter-product__list">
+						<li class="filter-product__item filter-item">
+							<div class="filter-item__title">
+								Choose a services
+							</div>
+							<ul class="filter-item__list filter__list--checkbox">
+								<li class="filter__item">
+									<label class="filter__label filter__label--checkbox">
+										<input class="filter__input" type="checkbox" name="namecheckbox_1" checked>
+										<span class="filter__name filter__name--checkbox">
+											Men's haircut
+										</span>
+									</label>
+								</li>
+								<li class="filter__item">
+									<label class="filter__label filter__label--checkbox">
+										<input class="filter__input" type="checkbox" name="namecheckbox_2" checked>
+										<span class="filter__name filter__name--checkbox">
+											Drying
+										</span>
+									</label>
+								</li>
+								<li class="filter__item">
+									<label class="filter__label filter__label--checkbox">
+										<input class="filter__input" type="checkbox" name="namecheckbox_3">
+										<span class="filter__name filter__name--checkbox">
+											Shaving
+										</span>
+									</label>
+								</li>
+								<li class="filter__item">
+									<label class="filter__label filter__label--checkbox">
+										<input class="filter__input" type="checkbox" name="namecheckbox_4">
+										<span class="filter__name filter__name--checkbox">
+											Crop close
+										</span>
+									</label>
+								</li>
+								<li class="filter__item">
+									<label class="filter__label filter__label--checkbox">
+										<input class="filter__input" type="checkbox" name="namecheckbox_5" checked>
+										<span class="filter__name filter__name--checkbox">
+											Wash hair
+										</span>
+									</label>
+								</li>
+							</ul>
+						</li>
+
+						<li class="filter-product__item filter-item">
+							<div class="filter-item__title">
+								Choose a master
+							</div>
+							<ul class="filter-item__list filter__list--radiobutton">
+								<li class="filter__item">
+									<label class="filter__label filter__label--radiobutton">
+										<input class="filter__input" type="radio" name="nameradio" value="1">
+										<span class="filter__name filter__name--radio">
+											Alex
+										</span>
+									</label>
+								</li>
+								<li class="filter__item">
+									<label class="filter__label filter__label--radiobutton">
+										<input class="filter__input" type="radio" name="nameradio" value="2">
+										<span class="filter__name filter__name--radio">
+											Jorge Jones
+										</span>
+									</label>
+								</li>
+								<li class="filter__item">
+									<label class="filter__label filter__label--radiobutton">
+										<input class="filter__input" type="radio" name="nameradio" value="3" checked>
+										<span class="filter__name filter__name--radio">
+											Dart Vaider
+										</span>
+									</label>
+								</li>
+								<li class="filter__item">
+									<label class="filter__label filter__label--radiobutton">
+										<input class="filter__input" type="radio" name="nameradio" value="4">
+										<span class="filter__name filter__name--radio">
+											SpongeBob Squarepants
+										</span>
+									</label>
+								</li>
+							</ul>
+						</li>
+
+						<li class="filter-product__item filter-item">
+							<div class="filter-item__title">
+								Choose a price
+							</div>
+							<div class="price-filter">
+								<div class="price-filter__line"></div>
+								<ul class="price-filter__list">
+									<li class="price-filter__item">
+										<label class="price-filter__label">
+											<span>From:</span>
+											<input class="price-filter__input price-filter__input--start" type="text">
+										</label>
+									</li>
+
+									<li class="price-filter__item">
+										<label class="price-filter__label">
+											<span>To:</span>
+											<input class="price-filter__input price-filter__input--end" type="text">
+										</label>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+
+					<button class="filter-product__button link link--shop" type="button">
+						show
+					</button>
+				</form>
+
+			</aside>
+
+			<div class="products-filter__gallery">
+				<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+			</div>
+
+		</div>
+	</div>
+</section>
+			<div class="products-shop">
+	<section class="products gallery" id="gallery">
+	<div class="products__container _container">
+		<h2 class="products__title title scroll-item">
+			Popular products
+		</h2>
+
+		<div class="product-swiper swiper">
+			<div class="product-swiper__wrapper swiper__wrapper">
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+			</div>
+
+			<button
+				class="product-swiper__arrow product-swiper__arrow--prev swiper-team__arrow swiper-team__arrow--prev _hoverSVG"
+				type="button"></button>
+			<button
+				class="product-swiper__arrow product-swiper__arrow--next swiper-team__arrow swiper-team__arrow--next _hoverSVG"
+				type="button"></button>
+		</div>
+	</div>
+</section>
+</div>
+		</main>
+
+		<footer class="footer" id="footer">
+	<div class="footer__container _container">
+		<h2 class="footer__title sr-only">
+			Footer
+		</h2>
+
+		<div class="footer__content">
+			<div class="footer__menu">
+				<a class="footer__logo logo _hoverSVG _dynamic_adapt_" data-da=".footer__menu,992,0" href="../index.html">
+					<svg class="logo__image">
+						<use xlink:href="img/sprite.svg#logo"></use>
+					</svg>
+				</a>
+				<nav class="footer__nav menu _dynamic_adapt_" data-da=".footer__contacts,992,1">
+					<ul class="menu__list menu__list--footer">
+						<li class="menu__item">
+							<a class="menu__link _hover decor" data-goto=".hero" href="../index.html">Home</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".shop" href="#">Shop</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".gallery" href="#">Gallery</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor popup-link" href="#popup__contact-us">Contuct us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<ul class="footer__contacts">
+				<li class="footer__contact footer__contact--contact">
+					<span class="footer__subtitle">
+						Contact us
+					</span>
+					<a class="footer__email _hover" href="mailto:support@gmail.com">support@gmail.com</a>
+					<a class="footer__phone _hover" href="tel:+38044152566954">+38 (044) 15 25 66 954</a>
+				</li>
+
+				<li class="footer__contact footer__contact--visit">
+					<span class="footer__subtitle">
+						Visit us
+					</span>
+					<address class="footer__address address">
+						Ukraine, Kyiv
+						<span class="address__street">
+							str. Oleshi 15, 62000
+						</span>
+					</address>
+				</li>
+
+				<li class="footer__contact footer__contact--follow">
+					<span class="footer__subtitle">
+						Follow us
+					</span>
+					<ul class="footer__socials socials">
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</footer>
+	</div>
+
+	<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup__contact-us" id="popup__contact-us">
+	<div class="popup__content">
+		<div class="popup__body">
+			<svg class="popup__close _hoverSVG">
+				<use xlink:href="img/sprite.svg#close"></use>
+			</svg>
+			<section class="request">
+	<h2 class="request__title">
+		Contact us!
+	</h2>
+
+	<span class="request__description">
+		Please leave your details and our manager will contact you within an hour.
+	</span>
+
+	<form class="request__form form" action="#" id="form" method="post">
+
+		<label class="request__label label">
+			Name:
+			<input class="request__input request__input--name input _req _name" type="text" name="name"
+				data-validate-field="name" autocomplete="off" placeholder="Gregory Simmmons" required>
+		</label>
+
+		<label class="request__label label">
+			Email:
+			<input class="request__input request__input--email input _req _email" type="email" name="email"
+				data-validate-field="email" autocomplete="off" placeholder="dwight.fleming@example.com" required>
+		</label>
+
+		<label class="request__label label">
+			Phone:
+			<input class="request__input request__input--phone input _req _phone" type="tel" name="tel"
+				data-validate-field="tel" autocomplete="off" placeholder="+38 (099) 999-9999" required>
+		</label>
+
+		<label class="request__label label">
+			Your comment:
+			<textarea class="request__input request__input--text input _req _text"
+				placeholder="Please leave your comment..."></textarea>
+		</label>
+
+		<button class="request__button link link--order" type="submit">
+			contact me
+		</button>
+	</form>
+</section>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

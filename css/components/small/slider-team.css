@@ -1,0 +1,79 @@
+.slider-team {
+  position: relative;
+  flex: 0 0 731px;
+  max-width: 731px;
+  min-width: 0;
+  padding: 50px 45px 0 45px;
+  margin: 0 0 40px 0; }
+  @media only screen and (max-width: 1199.98px) {
+    .slider-team {
+      max-width: 100%;
+      margin: 0 0 20px 0; } }
+  @media only screen and (max-width: 991.98px) {
+    .slider-team {
+      margin: 0 0 20px 0; } }
+  @media only screen and (max-width: 479.98px) {
+    .slider-team {
+      max-width: 100%;
+      padding: 0 22px 0 0;
+      margin: 0 0 17px -3px; } }
+
+.description {
+  display: block;
+  text-align: left;
+  max-width: 475px;
+  width: 100%;
+  overflow: auto;
+  min-height: 283px; }
+  .description::-webkit-scrollbar {
+    display: none; }
+  @media only screen and (max-width: 1199.98px) {
+    .description {
+      padding: 0 0 0 20px;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 991.98px) {
+    .description {
+      padding: 0 0 0 48px; } }
+  @media only screen and (max-width: 479.98px) {
+    .description {
+      padding: 0; } }
+  .description__item {
+    position: relative;
+    line-height: 1.25; }
+    .description__item p {
+      position: absolute;
+      z-index: 2;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 0.4s ease; }
+      @media only screen and (max-width: 991.98px) {
+        .description__item p {
+          top: 26px; } }
+    .description__item.tab_active .description__name {
+      opacity: 1; }
+    .description__item.tab_active p {
+      opacity: 1; }
+  .description__name {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    display: block;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 0 0 10px 0;
+    line-height: 1.1;
+    color: #ff7a00;
+    opacity: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: opacity 0.4s ease; }
+    @media only screen and (max-width: 1199.98px) {
+      .description__name {
+        font-size: 16px; } }
+    @media only screen and (max-width: 479.98px) {
+      .description__name {
+        margin: 0 0 0 4px; } }
+
+/*# sourceMappingURL=slider-team.css.map */

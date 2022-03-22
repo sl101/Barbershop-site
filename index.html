@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BarberShop</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon/blade.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header _fixed">
+	<div class="_container">
+		<div class="header__content">
+
+			<a class="header__logo logo _goto _hoverSVG _dynamic_adapt_" data-da=".menu__body,992,2" data-goto=".hero"
+				href="#">
+				<svg class="logo__image">
+					<use xlink:href="img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+
+			<div class="header__menu menu">
+				<button class="menu__burger burger" type="button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<nav class="menu__body _dynamic_adapt_" data-da=".wrapper,992,0">
+
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".hero" href="#">Home</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor" href="../shop.html">Shop</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".gallery" href="#">Gallery</a>
+						</li>
+					</ul>
+
+					<a class="menu__backet _hoverSVG _dynamic_adapt_" data-da=".menu,992,2" href="#">
+						<svg class="menu__icon">
+							<use xlink:href="img/sprite.svg#backet"></use>
+						</svg>
+						<span class="menu__amount">0</span>
+					</a>
+
+					<ul class="menu__request">
+						<li class="menu__popup menu__popup--contact">
+							<a class="menu__btn link link--contact popup-link" href="#popup__contact-us">contact us</a>
+						</li>
+
+						<li class="menu__popup menu__popup--order">
+							<button class="menu__btn link link--order _goto" data-goto=".booking" type="button">book
+								now</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+    <main class="_page">
+      <section class="hero" id="hero">
+	<div class="hero__content">
+		<div class="hero__order">
+			<h1 class="hero__title sr-only">
+				Barber Shop
+			</h1>
+
+			<img class="hero__logo" src="img/logo/logo_hero.png" alt="Logo Barber Shop">
+			<span class="hero__slogan">
+				Our barbershop is a place of style and mutual understanding in which it is pleasant to spend time.
+			</span>
+			<button class="hero__btn link link--order _goto" data-goto=".booking" type="button">
+				Book now
+			</button>
+		</div>
+
+		<button class="hero__link _hoverSVG _goto" data-goto=".services" type="button" aria-label="Scroll to services">
+			<svg class="hero__arrow">
+				<use xlink:href="img/sprite.svg#arrow_down"></use>
+			</svg>
+		</button>
+	</div>
+</section>
+      <section class="services" id="services" style="background-image: url(img/bg/bg_service.jpg);">
+	<div class="_container">
+		<h2 class="services__title title scroll-item">
+			Our services
+		</h2>
+	</div>
+
+	<div class="services__content">
+		<div class="_container">
+			<ul class="services__list">
+				<li class="services__item _hover scroll-item" style="background-image: url(img/icons/scissors.png);">
+					<a class="services__link _hover" href="#">
+						<span class="services__name">
+							Men's haircut
+						</span>
+						<span class="services__time">
+							60 min.
+						</span>
+						<span class="services__price">
+							350 / 400 / 450 ₴
+						</span>
+					</a>
+				</li>
+
+				<li class="services__item _hover scroll-item" style="background-image: url(img/icons/trimmer.png);">
+					<a class="services__link _hover" href="#">
+						<span class="services__name">
+							Crop close
+						</span>
+						<span class="services__time">
+							30 min.
+						</span>
+						<span class="services__price">
+							250 / 400 / 550 ₴
+						</span>
+					</a>
+				</li>
+
+				<li class="services__item _hover scroll-item" style="background-image: url(img/icons/hair-dryer.png);">
+					<a class="services__link _hover" href="#">
+						<span class="services__name">
+							Drying
+						</span>
+						<span class="services__time">
+							10 min.
+						</span>
+						<span class="services__price">
+							50 / 100 / 150 ₴
+						</span>
+					</a>
+				</li>
+
+				<li class="services__item _hover scroll-item" style="background-image: url(img/icons/shampoo.png);">
+					<a class="services__link _hover" href="#">
+						<span class="services__name">
+							Wash hair
+						</span>
+						<span class="services__time">
+							30 min.
+						</span>
+						<span class="services__price">
+							300 / 400 / 500 ₴
+						</span>
+					</a>
+				</li>
+
+				<li class="services__item _hover scroll-item" style="background-image: url(img/icons/swab.png);">
+					<a class="services__link _hover" href="#">
+						<span class="services__name">
+							Shaving
+						</span>
+						<span class="services__time">
+							30 min.
+						</span>
+						<span class="services__price">
+							250 / 400 / 550 ₴
+						</span>
+					</a>
+				</li>
+
+				<li class="services__item _hover scroll-item" style="background-image: url(img/icons/razor.png);">
+					<a class="services__link _hover" href="#">
+						<span class="services__name">
+							Hot shave
+						</span>
+						<span class="services__time">
+							40 min.
+						</span>
+						<span class="services__price">
+							350 / 400 / 450 ₴
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+      <section class="team">
+	<div class="team__container _container">
+		<h2 class="team__title title scroll-item">
+			Our team
+		</h2>
+
+		<div class="team__content _tabs-1">
+
+			<div class="team__slider slider-team">
+				<div class="team__swiper swiper-team">
+					<button class="swiper-team__arrow swiper-team__arrow--prev _hover" type="button"></button>
+<button class="swiper-team__arrow swiper-team__arrow--next _hover" type="button"></button>
+
+<div class="swiper-team__pagination"></div>
+
+<div class="swiper-team__wrapper">
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 1">
+		<img class="swiper-slide__image" src="img/team/photo_Alex.jpg" alt="Photo our team's member Alex">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item tab_active" data-hash="slide 2">
+		<img class="swiper-slide__image" src="img/team/photo_Jorge-Jones.jpg" alt="Photo our team's member Jorge Jones">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 3">
+		<img class="swiper-slide__image" src="img/team/photo_Albert.jpg" alt="Photo our team's member Albert">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 4">
+		<img class="swiper-slide__image" src="img/team/photo_Jacob.jpg" alt="Photo our team's member Jacob">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 5">
+		<img class="swiper-slide__image" src="img/team/photo_Avatar.jpg" alt="Photo our team's member Avatar">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 6">
+		<img class="swiper-slide__image" src="img/team/photo_Dart-Vaider.jpg" alt="Photo our team's member Dart Vaider">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 7">
+		<img class="swiper-slide__image" src="img/team/photo_Homer-Simpson.jpg" alt="Photo our team's member Homer Simpson">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 8">
+		<img class="swiper-slide__image" src="img/team/photo_SpongeBob-Squarepants.jpg"
+			alt="Photo our team's member SpongeBob Squarepants">
+	</div>
+</div>
+				</div>
+			</div>
+
+			<ul class="team__description description">
+				<li class="description__item _tabs-block" data-tab="tab 1">
+	<span class="description__name">Alex</span>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat assumenda quisquam voluptatum
+		saepe rem
+		animi, voluptatem sunt et? Dolores facere voluptatibus, similique eveniet nobis voluptatem saepe aut
+		deleniti inventore molestiae ratione earum cum ex consequatur ullam ipsam excepturi ad eaque. Quaerat
+		laborum culpa nobis consequatur nihil id labore quia dicta.
+	</p>
+</li>
+
+<li class="description__item _tabs-block tab_active" data-tab="tab 2">
+	<span class="description__name">Jorge Jones</span>
+	<p>
+		- How did you become a barber?<br>
+		- I decided to master the creative profession. And he found himself precisely in this. So my life has
+		changed dramatically.<br>
+		- What exactly do you like in your profession? Why are you blissing?<br>
+		- I like to work in a men's team, communicating with interesting people.<br>
+		- Why should a person who wants a haircut choose you?<br>
+		- Because I'm old and charismatic.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 3">
+	<span class="description__name">Albert</span>
+	<p>
+		Accompanied by experienced guides. The weather was not so hot. But we waited for a window in the weather -
+		and it was a wonderful way out. Guides will help you to prepare thoroughly! The ascent plan is comfortably
+		thought out! We admired the summits of Elbrus with a beautiful panorama of the surrounding mountains.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 4">
+	<span class="description__name">Jacob</span>
+	<p>
+		Thus, the further development of various forms of activity makes it possible to assess the importance of
+		the positions taken by the participants in relation to the tasks set.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 5">
+	<span class="description__name">Avatar</span>
+	<p>
+		Comrades! further development of various forms of activity allows us to carry out important tasks to
+		develop further directions of development. The task of the organization, especially the further
+		development of various forms of activity, entails the process of introducing and modernizing systems of
+		mass participation.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 6">
+	<span class="description__name">Dart Vaider</span>
+	<p>
+		And the Jedi rebellion failed.
+		The remaining Jedi will be found and defeated by us!
+		... From the attempt on my life, I still have scars. I'm disfigured! But I assure you, my determination is
+		both
+		never strong and great!
+		In order to ensure security and greater stability, the Republic will be reorganized by us in the first
+		Galactic Empire, for the sake of safety and for the good of society!
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 7">
+	<span class="description__name">Homer Simpson</span>
+	<p>
+		A small brook Dahl gurgles throughout the country and provides it with all the necessary rules. This is a
+		paradigmatic country in which the fried members of the sentence fly right into the mouth. Even omnipotent
+		punctuation has no power over fishy texts that lead a non-pictorial lifestyle.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 8">
+	<span class="description__name">SpongeBob Squarepants</span>
+	<p>
+		- If they think you're stupid, then they just haven't seen real fools!
+		- But they watch TV ...
+	</p>
+</li>
+			</ul>
+		</div>
+	</div>
+</section>
+      <section class="booking">
+	<h2 class="sr-only">
+		Book an appointment right now!
+	</h2>
+
+	<div class="_container">
+		<div class="booking__content">
+			<span class="booking__subtitle">
+				Book an appointment right now!
+			</span>
+			<span class="booking__description">
+				Please complete all these fields.
+			</span>
+
+			<form class="booking__form form" action="#">
+
+				<div class="booking__block-input">
+
+					<label class="booking__label booking__label--name label">
+						<span class="booking__label-name">
+							Name:
+						</span>
+						<input class="booking__input booking__input--name input _req _name" type="text" name="name"
+							autocomplete="off" placeholder="Gregory Simmmons" required>
+					</label>
+
+					<label class="booking__label booking__label--date label">
+						<span class="booking__label-name">
+							Date:
+						</span>
+						<input class="booking__input booking__input--date input _req _date" type="date" name="date"
+							autocomplete="off" required>
+					</label>
+
+					<label class="booking__label booking__label--time label">
+						<span class="booking__label-name">
+							Time:
+						</span>
+						<input class="booking__input booking__input--time input _req _time" type="time" name="time"
+							autocomplete="off" required>
+					</label>
+				</div>
+
+				<div class="booking__filter filter filter--radiobutton">
+					<span class="filter__title">
+						Choose a master:
+					</span>
+					<ul class="filter__list filter__list--radiobutton">
+						<li class="filter__item">
+							<label class="filter__label filter__label--radiobutton">
+								<input class="filter__input" type="radio" name="nameradio" value="1">
+								<span class="filter__name filter__name--radio">
+									Alex
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--radiobutton">
+								<input class="filter__input" type="radio" name="nameradio" value="2">
+								<span class="filter__name filter__name--radio">
+									Jorge Jones
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--radiobutton">
+								<input class="filter__input" type="radio" name="nameradio" value="3" checked>
+								<span class="filter__name filter__name--radio">
+									Dart Vaider
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--radiobutton">
+								<input class="filter__input" type="radio" name="nameradio" value="4">
+								<span class="filter__name filter__name--radio">
+									SpongeBob Squarepants
+								</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+
+				<div class="booking__filter filter filter--checkbox">
+					<span class="filter__title">
+						Choose a services:
+					</span>
+					<ul class="filter__list filter__list--checkbox">
+						<li class="filter__item">
+							<label class="filter__label filter__label--checkbox">
+								<input class="filter__input" type="checkbox" name="namecheckbox_1" checked>
+								<span class="filter__name filter__name--checkbox">
+									Men's haircut
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--checkbox">
+								<input class="filter__input" type="checkbox" name="namecheckbox_2" checked>
+								<span class="filter__name filter__name--checkbox">
+									Crop close
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--checkbox">
+								<input class="filter__input" type="checkbox" name="namecheckbox_3">
+								<span class="filter__name filter__name--checkbox">
+									Drying
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--checkbox">
+								<input class="filter__input" type="checkbox" name="namecheckbox_4">
+								<span class="filter__name filter__name--checkbox">
+									Wash hair
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--checkbox">
+								<input class="filter__input" type="checkbox" name="namecheckbox_5" checked>
+								<span class="filter__name filter__name--checkbox">
+									Shaving
+								</span>
+							</label>
+						</li>
+						<li class="filter__item">
+							<label class="filter__label filter__label--checkbox">
+								<input class="filter__input" type="checkbox" name="namecheckbox_6" checked>
+								<span class="filter__name filter__name--checkbox">
+									Hot shave
+								</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+
+				<button class="booking__button link link--order" type="submit">
+					Book now
+				</button>
+
+			</form>
+		</div>
+	</div>
+</section>
+      <section class="products gallery" id="gallery">
+	<div class="products__container _container">
+		<h2 class="products__title title scroll-item">
+			Popular products
+		</h2>
+
+		<div class="product-swiper swiper">
+			<div class="product-swiper__wrapper swiper__wrapper">
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+				<div class="product-swiper__slide swiper__slide">
+					<article class="product">
+	<span class="product__action">
+		sale
+	</span>
+
+	<div class="product__wrapper">
+
+		<a class="product__image" href="../product.html">
+			<img class="product__img" src="img/product/beard-oil_brooklyn.png" alt="Beard Oil Brooklyn picture">
+		</a>
+		<div class="product__content">
+			<div class="product__description">
+				<span class="product__subtitle">
+					Barbers
+				</span>
+				<div class="product__inner">
+					<span class="product__name">
+						Premium beard balm
+					</span>
+					<span class="product__amount">
+						50 ml
+					</span>
+					<span class="product__maden">
+						New York original
+					</span>
+				</div>
+				<span class="product__price">
+					$ 490.00
+				</span>
+
+			</div>
+			<div class="product__choise">
+				<button class="product__button product__button--shop link link--shop" type="button">
+					Shop now
+				</button>
+				<button class="product__button product__button--backet link link--shop" type="button">
+					+
+				</button>
+			</div>
+		</div>
+
+	</div>
+</article>
+				</div>
+			</div>
+
+			<button
+				class="product-swiper__arrow product-swiper__arrow--prev swiper-team__arrow swiper-team__arrow--prev _hoverSVG"
+				type="button"></button>
+			<button
+				class="product-swiper__arrow product-swiper__arrow--next swiper-team__arrow swiper-team__arrow--next _hoverSVG"
+				type="button"></button>
+		</div>
+	</div>
+</section>
+      <section class="review">
+	<div class="review__container _container">
+		<h2 class="review__title title scroll-item">
+			Our reviews
+		</h2>
+
+		<div class="review__content _tabs">
+
+			<div class="review__slider slider-team">
+				<div class="review__swiper swiper-team">
+					<button class="swiper-team__arrow swiper-team__arrow--prev _hover" type="button"></button>
+<button class="swiper-team__arrow swiper-team__arrow--next _hover" type="button"></button>
+
+<div class="swiper-team__pagination"></div>
+
+<div class="swiper-team__wrapper">
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 1">
+		<img class="swiper-slide__image" src="img/team/photo_Alex.jpg" alt="Photo our team's member Alex">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item tab_active" data-hash="slide 2">
+		<img class="swiper-slide__image" src="img/team/photo_Jorge-Jones.jpg" alt="Photo our team's member Jorge Jones">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 3">
+		<img class="swiper-slide__image" src="img/team/photo_Albert.jpg" alt="Photo our team's member Albert">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 4">
+		<img class="swiper-slide__image" src="img/team/photo_Jacob.jpg" alt="Photo our team's member Jacob">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 5">
+		<img class="swiper-slide__image" src="img/team/photo_Avatar.jpg" alt="Photo our team's member Avatar">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 6">
+		<img class="swiper-slide__image" src="img/team/photo_Dart-Vaider.jpg" alt="Photo our team's member Dart Vaider">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 7">
+		<img class="swiper-slide__image" src="img/team/photo_Homer-Simpson.jpg" alt="Photo our team's member Homer Simpson">
+	</div>
+
+	<div class="swiper-team__slide swiper-slide _tabs-item" data-hash="slide 8">
+		<img class="swiper-slide__image" src="img/team/photo_SpongeBob-Squarepants.jpg"
+			alt="Photo our team's member SpongeBob Squarepants">
+	</div>
+</div>
+				</div>
+			</div>
+
+			<ul class="review__description description">
+				<li class="description__item _tabs-block" data-tab="tab 1">
+	<span class="description__name">Alex</span>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat assumenda quisquam voluptatum
+		saepe rem
+		animi, voluptatem sunt et? Dolores facere voluptatibus, similique eveniet nobis voluptatem saepe aut
+		deleniti inventore molestiae ratione earum cum ex consequatur ullam ipsam excepturi ad eaque. Quaerat
+		laborum culpa nobis consequatur nihil id labore quia dicta.
+	</p>
+</li>
+
+<li class="description__item _tabs-block tab_active" data-tab="tab 2">
+	<span class="description__name">Jorge Jones</span>
+	<p>
+		- How did you become a barber?<br>
+		- I decided to master the creative profession. And he found himself precisely in this. So my life has
+		changed dramatically.<br>
+		- What exactly do you like in your profession? Why are you blissing?<br>
+		- I like to work in a men's team, communicating with interesting people.<br>
+		- Why should a person who wants a haircut choose you?<br>
+		- Because I'm old and charismatic.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 3">
+	<span class="description__name">Albert</span>
+	<p>
+		Accompanied by experienced guides. The weather was not so hot. But we waited for a window in the weather -
+		and it was a wonderful way out. Guides will help you to prepare thoroughly! The ascent plan is comfortably
+		thought out! We admired the summits of Elbrus with a beautiful panorama of the surrounding mountains.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 4">
+	<span class="description__name">Jacob</span>
+	<p>
+		Thus, the further development of various forms of activity makes it possible to assess the importance of
+		the positions taken by the participants in relation to the tasks set.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 5">
+	<span class="description__name">Avatar</span>
+	<p>
+		Comrades! further development of various forms of activity allows us to carry out important tasks to
+		develop further directions of development. The task of the organization, especially the further
+		development of various forms of activity, entails the process of introducing and modernizing systems of
+		mass participation.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 6">
+	<span class="description__name">Dart Vaider</span>
+	<p>
+		And the Jedi rebellion failed.
+		The remaining Jedi will be found and defeated by us!
+		... From the attempt on my life, I still have scars. I'm disfigured! But I assure you, my determination is
+		both
+		never strong and great!
+		In order to ensure security and greater stability, the Republic will be reorganized by us in the first
+		Galactic Empire, for the sake of safety and for the good of society!
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 7">
+	<span class="description__name">Homer Simpson</span>
+	<p>
+		A small brook Dahl gurgles throughout the country and provides it with all the necessary rules. This is a
+		paradigmatic country in which the fried members of the sentence fly right into the mouth. Even omnipotent
+		punctuation has no power over fishy texts that lead a non-pictorial lifestyle.
+	</p>
+</li>
+
+<li class="description__item _tabs-block" data-tab="tab 8">
+	<span class="description__name">SpongeBob Squarepants</span>
+	<p>
+		- If they think you're stupid, then they just haven't seen real fools!
+		- But they watch TV ...
+	</p>
+</li>
+			</ul>
+		</div>
+	</div>
+</section>
+      <section class="contacts">
+	<div class="_container">
+		<div class="contacts__inner">
+			<div class="contacts__content">
+				<div class="contacts__address">
+					<h2 class="contacts__title title scroll-item">
+						Contact us
+					</h2>
+					<address class="contacts__address address contacts__paddings">
+						<span class="address__location address__location--city">
+							Ukraine, Kyiv
+						</span>
+						<span class="address__location address__location--street">
+							<span class="address__location-name">
+								str.
+							</span>Oleshi 15, 62000
+						</span>
+						<a class="address__location address__location--email _hover"
+							href="mailto:support@gmail.com">support@gmail.com</a>
+						<a class="address__location address__location--phone _hover" href="tel:+38044152566954">+38 (044) 15 25 66
+							954</a>
+					</address>
+					<ul class="contacts__socials socials contacts__paddings">
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="contacts__schedule">
+					<h2 class="contacts__title  contacts__title--schedule title">
+						Schedule
+					</h2>
+					<div class="contacts__opentime contacts__paddings">
+						<span class="contacts__days">
+							mon - fri
+						</span>
+						<span class="contacts__time">
+							10:00 - 20:00
+						</span>
+					</div>
+					<div class="contacts__opentime contacts__paddings">
+						<span class="contacts__days">
+							sat - sun
+						</span>
+						<span class="contacts__time">
+							12:00 - 22:00
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="contacts__map">
+				<img class="contacts__img" src="img/bg/map.png" alt="Picture of map with our locations">
+			</div>
+		</div>
+	</div>
+</section>
+    </main>
+
+    <footer class="footer" id="footer">
+	<div class="footer__container _container">
+		<h2 class="footer__title sr-only">
+			Footer
+		</h2>
+
+		<div class="footer__content">
+			<div class="footer__menu">
+				<a class="footer__logo logo _goto _hoverSVG _dynamic_adapt_" data-goto=".hero" data-da=".footer__menu,992,0"
+					href="#">
+					<svg class="logo__image">
+						<use xlink:href="img/sprite.svg#logo"></use>
+					</svg>
+				</a>
+				<nav class="footer__nav menu _dynamic_adapt_" data-da=".footer__contacts,992,1">
+					<ul class="menu__list menu__list--footer">
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".hero" href="#">Home</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor" href="../shop.html">Shop</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor _goto" data-goto=".gallery" href="#">Gallery</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link _hover decor popup-link" href="#popup__contact-us">Contuct us</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<ul class="footer__contacts">
+				<li class="footer__contact footer__contact--contact">
+					<span class="footer__subtitle">
+						Contact us
+					</span>
+					<a class="footer__email _hover" href="mailto:support@gmail.com">support@gmail.com</a>
+					<a class="footer__phone _hover" href="tel:+38044152566954">+38 (044) 15 25 66 954</a>
+				</li>
+
+				<li class="footer__contact footer__contact--visit">
+					<span class="footer__subtitle">
+						Visit us
+					</span>
+					<address class="footer__address address">
+						Ukraine, Kyiv
+						<span class="address__street">
+							str. Oleshi 15, 62000
+						</span>
+					</address>
+				</li>
+
+				<li class="footer__contact footer__contact--follow">
+					<span class="footer__subtitle">
+						Follow us
+					</span>
+					<ul class="footer__socials socials">
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#youtube"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="socials__image">
+							<a class="socials__link _hoverSVG" href="#">
+								<svg class="socials__icon">
+									<use xlink:href="img/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</footer>
+  </div>
+
+  <div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup__contact-us" id="popup__contact-us">
+	<div class="popup__content">
+		<div class="popup__body">
+			<svg class="popup__close _hoverSVG">
+				<use xlink:href="img/sprite.svg#close"></use>
+			</svg>
+			<section class="request">
+	<h2 class="request__title">
+		Contact us!
+	</h2>
+
+	<span class="request__description">
+		Please leave your details and our manager will contact you within an hour.
+	</span>
+
+	<form class="request__form form" action="#" id="form" method="post">
+
+		<label class="request__label label">
+			Name:
+			<input class="request__input request__input--name input _req _name" type="text" name="name"
+				data-validate-field="name" autocomplete="off" placeholder="Gregory Simmmons" required>
+		</label>
+
+		<label class="request__label label">
+			Email:
+			<input class="request__input request__input--email input _req _email" type="email" name="email"
+				data-validate-field="email" autocomplete="off" placeholder="dwight.fleming@example.com" required>
+		</label>
+
+		<label class="request__label label">
+			Phone:
+			<input class="request__input request__input--phone input _req _phone" type="tel" name="tel"
+				data-validate-field="tel" autocomplete="off" placeholder="+38 (099) 999-9999" required>
+		</label>
+
+		<label class="request__label label">
+			Your comment:
+			<textarea class="request__input request__input--text input _req _text"
+				placeholder="Please leave your comment..."></textarea>
+		</label>
+
+		<button class="request__button link link--order" type="submit">
+			contact me
+		</button>
+	</form>
+</section>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

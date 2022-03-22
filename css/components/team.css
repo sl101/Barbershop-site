@@ -1,0 +1,51 @@
+.team {
+  text-align: right;
+  padding: 85px 0 63px; }
+  @media only screen and (max-width: 1199.98px) {
+    .team {
+      padding: 55px 0 57px; } }
+  @media only screen and (max-width: 991.98px) {
+    .team {
+      padding: 55px 0 0; } }
+  @media only screen and (max-width: 479.98px) {
+    .team {
+      padding: 28px 0 10px; } }
+  .team__container {
+    max-width: 1285px; }
+    @media only screen and (max-width: 991.98px) {
+      .team__container {
+        max-width: 1230px; } }
+  .team__title {
+    margin: 0 36px 70px 0; }
+    @media only screen and (max-width: 1199.98px) {
+      .team__title {
+        margin: 0 15px 106px 0; } }
+    @media only screen and (max-width: 991.98px) {
+      .team__title {
+        margin: 0 0 54px 0;
+        padding: 0 0 0 17px;
+        word-spacing: 10px; } }
+    @media only screen and (max-width: 479.98px) {
+      .team__title {
+        margin: 0 1px 8px 0;
+        word-spacing: 5px; } }
+  .team__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 1199.98px) {
+      .team__content {
+        justify-content: center; } }
+    @media only screen and (max-width: 479.98px) {
+      .team__content {
+        justify-content: start; } }
+  .team__description {
+    min-height: 305px; }
+  .team .swiper-pagination-bullet {
+    background-color: #ff7a00;
+    border-color: #ff7a00; }
+  .team .swiper-pagination-bullet-active {
+    background-color: transparent; }
+
+/*# sourceMappingURL=team.css.map */

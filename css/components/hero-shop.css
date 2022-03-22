@@ -1,0 +1,137 @@
+.shop {
+  position: relative;
+  z-index: 0;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/bg/bg-shop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 15px; }
+  @media only screen and (max-width: 991.98px) {
+    .shop {
+      background-image: url("../img/bg/bg-shop_tablet.jpg");
+      min-height: 519px; } }
+  @media only screen and (max-width: 479.98px) {
+    .shop {
+      background-image: url("../../img/bg/bg-shop_phone.jpg");
+      min-height: 477px; } }
+  .shop::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(255, 122, 0, 0.7) 0%, rgba(255, 122, 0, 0) 100%); }
+  .shop__container {
+    position: relative;
+    width: 100%; }
+  .shop__content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 60px; }
+    @media only screen and (max-width: 479.98px) {
+      .shop__content {
+        padding: 0; } }
+
+.shop-swiper {
+  overflow: hidden; }
+  @media only screen and (max-width: 479.98px) {
+    .shop-swiper {
+      margin: 30px 0 0 0; } }
+  .shop-swiper__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: transparent; }
+    @media only screen and (max-width: 479.98px) {
+      .shop-swiper__arrow {
+        display: none; } }
+    .shop-swiper__arrow::before, .shop-swiper__arrow::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 7px;
+      height: 30px;
+      border-radius: 4px;
+      background-color: #ff7a00; }
+    .shop-swiper__arrow--prev {
+      left: 0; }
+      .shop-swiper__arrow--prev::before {
+        transform: translate(24px, 8px) rotate(45deg); }
+      .shop-swiper__arrow--prev::after {
+        transform: translate(24px, 25px) rotate(-45deg); }
+    .shop-swiper__arrow--next {
+      right: 0; }
+      .shop-swiper__arrow--next::before {
+        transform: translate(24px, 8px) rotate(-45deg); }
+      .shop-swiper__arrow--next::after {
+        transform: translate(24px, 25px) rotate(45deg); }
+  .shop-swiper__wrapper {
+    display: flex;
+    text-align: center; }
+
+.shop-slide {
+  flex: 1 0 100%;
+  position: relative;
+  z-index: 1; }
+  .shop-slide__value {
+    display: inline-block;
+    font-weight: 700; }
+    .shop-slide__value--modul, .shop-slide__value--amount {
+      font-size: 220px;
+      line-height: 0.8; }
+      @media only screen and (max-width: 991.98px) {
+        .shop-slide__value--modul, .shop-slide__value--amount {
+          font-size: 130px; } }
+      @media only screen and (max-width: 479.98px) {
+        .shop-slide__value--modul, .shop-slide__value--amount {
+          font-size: 106px;
+          line-height: 0.9; } }
+    .shop-slide__value--amount, .shop-slide__value--description {
+      letter-spacing: -2px; }
+    .shop-slide__value--modul {
+      letter-spacing: 40px;
+      padding: 10px 10px 0 0; }
+      @media only screen and (max-width: 991.98px) {
+        .shop-slide__value--modul {
+          letter-spacing: 20px; } }
+      @media only screen and (max-width: 991.98px) {
+        .shop-slide__value--modul {
+          letter-spacing: 13px; } }
+    .shop-slide__value--quality {
+      font-size: 100px;
+      line-height: 0; }
+      @media only screen and (max-width: 991.98px) {
+        .shop-slide__value--quality {
+          font-size: 72px; } }
+      @media only screen and (max-width: 991.98px) {
+        .shop-slide__value--quality {
+          font-size: 52px; } }
+    .shop-slide__value--description {
+      text-transform: uppercase;
+      display: block;
+      font-size: 72px;
+      margin: -12px 0 0 0; }
+      @media only screen and (max-width: 991.98px) {
+        .shop-slide__value--description {
+          font-size: 42px; } }
+      @media only screen and (max-width: 479.98px) {
+        .shop-slide__value--description {
+          font-size: 32px;
+          letter-spacing: 0; } }
+
+/*# sourceMappingURL=hero-shop.css.map */

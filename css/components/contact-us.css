@@ -1,0 +1,31 @@
+.request {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff; }
+  .request__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 0 18px 0; }
+  .request__description {
+    display: block;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto 54px; }
+  .request__form {
+    display: block;
+    max-width: 600px;
+    width: 100%; }
+  .request__input {
+    padding: 8px 20px;
+    margin: 5px 0 24px 0; }
+  .request__input--text {
+    min-height: 94px;
+    margin: 0 0 35px 0; }
+  .request__button {
+    max-width: 176px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=contact-us.css.map */
